@@ -28,11 +28,11 @@ public class BoardCreator {
 		for (int i = 0; i < stringBoard.length; i++) {
 			String row = stringBoard[i];
 			String[] array = row.split("\\s+");
-			if (i % 3 == 0 && i != 0) {
+			if (i % squareDimension == 0 && i != 0) {
 				rowCount++;
 			}
 			for (int j = 0; j < stringBoard.length; j++) {
-				if (j % 3 == 0) {
+				if (j % squareDimension == 0) {
 					currentSquare = mySquares[colCount][rowCount];
 					colCount++;
 				}

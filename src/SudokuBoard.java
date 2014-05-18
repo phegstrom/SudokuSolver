@@ -157,11 +157,11 @@ public class SudokuBoard {
 		Square currentSquare = null;
 		
 		for(int i = 0; i < myDimension; i++) {
-			if (i % 3 == 0 && i != 0) {
+			if (i % mySquareDimension == 0 && i != 0) {
 				rowCount++;
 			}
 			for (int j = 0; j < myDimension; j++) {
-				if (j % 3 == 0) {
+				if (j % mySquareDimension == 0) {
 					currentSquare = mySquares[colCount][rowCount];
 					colCount++;
 				}

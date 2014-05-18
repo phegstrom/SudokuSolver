@@ -36,7 +36,7 @@ public class SudokoSolver {
 	 * @return sudoku board
 	 */
 	private static SudokuBoard solveBoard(SudokuBoard board) {
-
+		
 		List<Point> myPositions = board.getValidPositions();
 
 		if (myPositions.isEmpty()) {
